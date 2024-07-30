@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  glomap:
+    image: glomap
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    runtime: nvidia
+    volumes:
+      - ./workspace/:/workspace/
