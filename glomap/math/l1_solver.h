@@ -7,7 +7,7 @@
 #include <colmap/util/logging.h>
 
 #include <Eigen/Cholesky>
-#include <Eigen/CholmodSupport>
+#include <suitesparse/CholmodSupport>
 #include <Eigen/Core>
 
 // An L1 norm (|| A * x - b ||_1) approximation solver based on ADMM
